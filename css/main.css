@@ -1,19 +1,15 @@
 /* ------------- IMAGES ------------- */
 #aboutHeader {
     background-image: url(..//images/stage.jpg);
-    background-size: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
     height: 100vh;
+    background: 1000px;
 }
 
-#aboutHeaderTri {
-    /*Layout*/
-    width: 100vw;
-    height: 100vh;
-    flex-shrink: 0;
+/* ------------- BODY ------------- */
 
-    /*Style*/
-    fill: rgba(255, 255, 255, 0.07);
-    stroke-width: 1px;
-    stroke: rgba(255, 255, 255, 0.10);
-    backdrop-filter: blur(6px);
+body {
+    padding: 0px;
+    margin: 0px;
 }

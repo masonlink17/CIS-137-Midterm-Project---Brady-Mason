@@ -1,10 +1,13 @@
 /* ------------- IMAGES ------------- */
-#aboutHeader {
-    background-image: url(..//images/stage.jpg);
-    background-size: 100%;
+
+#aboutHeaderImg {
+    /* background-image: url(..//images/stage.jpg); */
+    /* background-size: 100%;
     background-repeat: no-repeat;
     height: 100vh;
-    background: 1000px;
+    background: 1000px; */
+    width: 100vw;
+    max-height: 80vw;
 }
 
 /* ------------- BODY ------------- */
@@ -12,4 +15,34 @@
 body {
     padding: 0px;
     margin: 0px;
+    height: 200vh;
+    background-color: black;
+}
+
+/* ------------- NAV ------------- */
+
+#navBar {
+    position:fixed;
+    bottom: 30px;
+    right: 20%;
+    background-color: white;
+    padding: 3%;
+    width: 50%;
+    border-radius: 63px;
+    box-shadow: rgba(0, 0, 0, 0.162) 10px 10px 20px 3px;
+}
+
+#navBar > nav > ul{
+    margin:0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+}
+
+#navBar > nav > ul> li> a{
+    font-family: Futura;
+    color: black;
+    text-decoration: none;
+    font-size: 15pt;
+
 }

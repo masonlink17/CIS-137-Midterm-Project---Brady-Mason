@@ -1,0 +1,19 @@
+/* ------------- IMAGES ------------- */
+#aboutHeader {
+    background-image: url(..//images/stage.jpg);
+    background-size: 100vh;
+    height: 100vh;
+}
+
+#aboutHeaderTri {
+    /*Layout*/
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+
+    /*Style*/
+    fill: rgba(255, 255, 255, 0.07);
+    stroke-width: 1px;
+    stroke: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(6px);
+}

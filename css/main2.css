@@ -1,11 +1,134 @@
+body{
+    margin:0px;
+    padding: 0px;
+}
+
 #wrap {
     display: grid;
+    gap: 20px;
     grid-template-columns: repeat(6, 1fr);
+    background-color: #000000;
 }
+
+/* ----------HEADER---------- */
 
 #aboutHeader {
     background-image: url(..//images/stage.jpg);
-    background-size: 100%;
+    background-size: 120%;
     grid-column: 1/7;
     height: 100vh;
+}
+
+#aboutHeaderTitle {
+    padding: 0px;
+    margin-left: 50px;
+    grid-column: 1/4;
+    color: #FFFFFF;
+    font-family: futura;
+    font-size: 150px;
+    line-height: 1em;
+    letter-spacing: -10px;
+    
+}
+
+/* ----------NAVBAR---------- */
+
+#headerNavBar {
+    position:fixed;
+    bottom: 30px;
+    right: 28%;
+    padding: 2%;
+    width: 40%;
+    border-radius: 63px;
+    box-shadow: #8000FF 0px 0px 10px 3px;
+    text-align: center;
+    margin-right: auto;
+    z-index: 3;
+}
+
+#headerNavBar > nav > ul{
+    margin:0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+#headerNavBar > nav > ul> li> a{
+    font-family: Futura;
+    color: black;
+    text-decoration: none;
+    font-size: 15pt;
+    margin: auto;
+    transition-duration: 0.4s;
+}
+
+#headerNavBar > nav > ul> li> a:hover{
+    color: #FFFFFF;
+    transition-duration: 0.4s;
+}
+
+.selected {
+    background: #8000FF;
+    padding: 16%;
+    border-radius: 116px;
+    
+}
+
+#headerNavList{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ----------null NAV---------- */
+
+#nullHeaderNavBar {
+    position:fixed;
+    bottom: 30px;
+    left: 28%;
+    padding: 2%;
+    width: 40%;
+    background-color: #FFFFFF;
+    border-radius: 63px;
+    text-align: center;
+    margin-right: auto;
+    z-index: 1;
+}
+
+#nullHeaderNavBar > nav > ul{
+    margin:0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+#nullHeaderNavBar > nav > ul> li> a{
+    font-family: Futura;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15pt;
+    margin: auto;
+}
+
+/* ----------NAV SELECTOR---------- */
+#navSelector {
+    background-color: #8000FF;
+    padding: 2.25em;
+    border-radius: 116px;
+    position:absolute;
+    bottom: 35px;
+    width: 45px;
+    transition: left 0.3s ease;
+    z-index: 2;
+}
+
+/* ----------CLAUDE BIO---------- */
+
+#claudeBio {
+    grid-column: 4/7;
+    color: #FFFFFF;
+}
+
+/* ----------FOOTER---------- */
+#footer {
+    grid-column: 1/7;
 }

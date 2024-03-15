@@ -1,0 +1,11 @@
+#wrap {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#aboutHeader {
+    background-image: url(..//images/stage.jpg);
+    background-size: 100%;
+    grid-column: 1/7;
+    height: 100vh;
+}

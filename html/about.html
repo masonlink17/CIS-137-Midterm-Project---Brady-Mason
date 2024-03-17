@@ -7,7 +7,7 @@
     <title>About</title>
     <script type = "text/javascript" src="..//javascript/navigationBar.js"></script>
 </head>
-<body>
+<body onscroll="navBarScroll()">
     <div id="headerNavBar" onmouseout="startTimer('ABOUT')" onmouseover="stopTimer()">
         <nav>
             <ul id="headerNavList">
@@ -28,7 +28,7 @@
             </ul>
         </nav>
     </div>
-    <div id="navSelector" onmouseover="moveSelector()"></div>
+    <div id="navSelector" onmouseover="moveSelector()" ></div>
     <div id="wrap">
         <div id="aboutHeader">
             <!-- <img id="aboutHeaderImg" src="../images/stage.jpg" alt="main stage picture"> -->

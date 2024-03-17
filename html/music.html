@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/main3(music).css">
+    <title>Music</title>
+    <script type = "text/javascript" src="..//javascript/navigationBar.js"></script>
 </head>
 <body>
-    
+    <div id="headerNavBar" onmouseout="startTimer('ABOUT')" onmouseover="stopTimer()">
+        <nav>
+            <ul id="headerNavList">
+                <li><a href="home.html" id="navHOME" onmouseover="moveSelector('HOME')">HOME</a></li>
+                <li><a href="about.html" id="navABOUT" onmouseover="moveSelector('ABOUT')">ABOUT</a></li>
+                <li><a href="music.html" id="navMUSIC" onmouseover="moveSelector('MUSIC')">MUSIC</a></li>
+                <li><a href="merch.html" id="navMERCH" onmouseover="moveSelector('MERCH')">MERCH</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="nullHeaderNavBar">
+        <nav>
+            <ul id="nullHeaderNavList">
+                <li><a>HOME</a></li>
+                <li><a>ABOUT</a></li>
+                <li><a>MUSIC</a></li>
+                <li><a>MERCH</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="navSelector" onmouseover="moveSelector()"></div>
+    <div id="wrap">
+        <div id="musicHeader">
+            <!-- <img id="aboutHeaderImg" src="../images/stage.jpg" alt="main stage picture"> -->
+            <h1 id="musicHeaderTitle">TALENT <br> AND <br> MASS <br> APPEAL</h1>
+        </div>
+        <div id="musicContent">
+        </div>
+        <div id="footer">
+            <nav id="fotterNav">
+                <ul id="footerNavList">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="music.html">MUSIC</a></li>
+                    <li><a href="merch.html">MERCH</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="releaseBarColumns">
+        <div id="newReleasesTitle">
+            <h1>| New Releases |</h1>
+        </div>
+        <div id="releaseColumns">
+            <div id="rockApocalypseTitle" class="column">
+                <h2>Rock Apocalypse</h2>
+                    <div id="timArtistName">
+                        <p>Tim Munchkin</p>
+                    </div>
+            </div>
+            <div id="myTimeTitle" class="column">
+                <h2>My Time</h2>
+                    <div id="herbertArtistName">
+                        Herbert Tonius
+                    </div>
+            </div>
+            <div id="beer&BentlysTitle" class="column">
+                <h2>Beer & Bentleys</h2>
+                    <div id="jasonArtistName">
+                        <p>Jason All-Dean</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="spotlightSection">
+        <div id="spotlightTitle">
+            <h2>Spotlight</h2>
+        </div>
+        <div id="jasonBioTitle">
+            <h3>Jason All-Dean</h3>
+        </div>
+        <div id="jasonBio">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div id="listenNowButton">
+            <h4>Listen Now</h4>
+        </div>
+    </div>
 </body>
 </html>

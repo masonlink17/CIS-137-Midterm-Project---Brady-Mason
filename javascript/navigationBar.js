@@ -23,6 +23,13 @@ function moveSelector (aLink) {
 
     x_pos += winWidth
     d.style.left = x_pos + "px";
+    d.style.bottom = '35px'
+}
+
+function navBarScroll () {
+    /* let n = document.getElementById('navSelector');
+    n.syle.bottom = '35px'; */
+    console.log("scroll!")
 }
 
 function startTimer (aLink) {

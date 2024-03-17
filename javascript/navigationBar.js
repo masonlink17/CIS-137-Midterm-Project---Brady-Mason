@@ -26,12 +26,13 @@ function moveSelector (aLink) {
 }
 
 function startTimer (aLink) {
-    hoverTimer = setTimeout(moveSelector(aLink), 10000);
+    hoverTimer = setTimeout(function () {moveSelector(aLink);}, 250);
 }
 
 function stopTimer () {
     clearTimeout(hoverTimer)
 }
+
 
 
 /* function divColorTest (color) {

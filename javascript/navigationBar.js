@@ -26,7 +26,7 @@ function moveSelector (aLink) {
     d.style.bottom = '35px'
 }
 
-function navBarScroll () {
+function navBarScroll () {6
     /* let n = document.getElementById('navSelector');
     n.syle.bottom = '35px'; */
     console.log("scroll!")

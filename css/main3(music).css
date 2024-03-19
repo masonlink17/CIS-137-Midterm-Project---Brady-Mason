@@ -3,9 +3,16 @@ body{
     padding: 0px;
 }
 
+#musicHeader {
+    background-image: url(..//images/musicBackHeader.jpeg);
+    width: 100%;
+    height: 576px;
+    grid-column: 1 / span 6;
+}
+
 #musicHeaderTitle {
     padding: 0px;
-    margin-left: 50px;
+    margin-left: 0px;
     grid-column: 1/4;
     color: #000000;
     font-family: futura; /* ? */

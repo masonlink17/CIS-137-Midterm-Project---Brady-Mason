@@ -10,7 +10,7 @@ body{
     background-color: #000000;
 }
 
-/* ----------HEADER---------- */
+/* ----------ABOUT HEADER---------- */
 
 #aboutHeader {
     background-image: url(..//images/stage.jpg);
@@ -30,6 +30,46 @@ body{
     letter-spacing: -10px;
     
 }
+
+/* ----------HOME TOP HEADER---------- */
+
+#sporkRecordsTitle {
+    color: #FFFFFF;
+    font-family: futura;
+    font-size: 60pt;
+    letter-spacing: -15px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ----------HOME NAV HEADER---------- */
+
+#homeNav {
+    grid-column: 1/13;
+    background-image: url(..//images/Black\ White\ Music.jpg);
+    text-align: center;
+    padding: 15%;
+}
+
+#homeNavList > li > a {
+    font-family: futura;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 25pt;
+    transition-duration: 0.3s;
+}
+
+#homeNavList > li > a:hover {
+    color: #8000FF;
+    transition-duration: 0.3s;
+}
+
+#homeNavList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
 
 /* ----------NAVBAR---------- */
 
@@ -119,6 +159,67 @@ body{
     width: 45px;
     transition: left 0.3s ease;
     z-index: 2;
+}
+
+/* ----------MUSIC SCROLLER---------- */
+
+#musicScroller {
+    color: #FFFFFF;
+    font-family: futura;
+    font-size: 20pt;
+    grid-column: 1/13;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#midMusicScroller > p{
+    padding: 0px;
+    text-align: right;
+    animation: midMusicScroller linear;
+    animation-timeline: view();
+}
+
+@keyframes midMusicScroller {
+    from {transform: translateX(-100vw);}
+    to {transform: translateX(100vw);}
+}
+
+/* ----------HOME REVIEWS---------- */
+#homeReviews {
+    color: #FFFFFF;
+    font-family: futura;
+    grid-column: 1/13;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+#reviewOne {
+    grid-column: 2/5;
+    text-align: right;
+}
+
+#reviewOneImage {
+    grid-column: 5/8;
+}
+
+#reviewOneImage > img{
+    width: 50%;
+    border-radius: 65px;
+}
+
+#reviewTwo {
+    grid-column: 5/8;
+    text-align: left;
+}
+
+#reviewTwoImage {
+    grid-column: 2/5;
+}
+
+#reviewTwoImage > img{
+    width: 50%;
+    border-radius: 65px;
 }
 
 /* ----------CLAUDE BIO---------- */

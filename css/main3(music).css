@@ -53,6 +53,10 @@ body {
     right: 6px;
     cursor: pointer;
 }
+#merchLinkPopup {
+    text-decoration: none;
+    color: #FFFFFF; /* Why no worko */
+}
 
 /* ----------NAVBAR---------- */
 

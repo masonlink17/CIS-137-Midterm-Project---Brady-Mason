@@ -8,7 +8,7 @@
     <script type = "text/javascript" src="..//javascript/navigationBar.js"></script>
 </head>
 <body>
-    <div id="headerNavBar" onmouseout="startTimer('ABOUT')" onmouseover="stopTimer()">
+    <div id="headerNavBar" onmouseout="startTimer('MUSIC')" onmouseover="stopTimer()">
         <nav>
             <ul id="headerNavList">
                 <li><a href="home.html" id="navHOME" onmouseover="moveSelector('HOME')">HOME</a></li>
@@ -29,6 +29,19 @@
         </nav>
     </div>
     <div id="navSelector" onmouseover="moveSelector()"></div>
+    <div>
+        <div class="popup-container" id="popupContainer">
+            <div class="popup">
+                <span class="close-btn" onclick="closePopup()">X</span>
+                <h2>Hello, World!</h2>
+                <p>This is a dismissable popup.</p>
+            </div>
+        </div>
+        
+        <button onclick="openPopup()">Open Popup</button>
+        
+        <script src="popup.js"></script>
+    </div>
     <div id="wrap">
         <div id="musicHeader">
             <!-- <img id="aboutHeaderImg" src="../images/stage.jpg" alt="main stage picture"> -->

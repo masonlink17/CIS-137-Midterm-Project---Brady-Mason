@@ -3,16 +3,10 @@ body{
     padding: 0px;
 }
 
-#musicHeaderTitle {
-    padding: 0px;
-    margin-left: 50px;
-    grid-column: 1/4;
-    color: #000000;
-    font-family: futura; /* ? */
-    font-size: 150px;
-    line-height: 1em;
-    letter-spacing: -10px;
-    
+/* ----------HEADER---------- */
+
+#merchHeader {
+    background-image: url(..//images/jacket.jpg);
 }
 
 /* ----------NAVBAR---------- */
@@ -103,71 +97,4 @@ body{
     width: 45px;
     transition: left 0.3s ease;
     z-index: 2;
-}
-
-/* ----------RELEASES---------- */
-
-#newReleasesTitle {
-    text-align: center;
-    margin-bottom: 50pt;
-}
-
-#releaseColumns {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.column {
-    flex: 1;
-    margin: 0 10px;
-    padding: 10px;
-}
-
-.column h2 {
-    margin: 0;
-}
-
-.column p {
-    margin: 5px 0;
-}
-
-#spotlightTitle {
-    color: #000000;
-    font-family: Poppins;
-    font-size: 108px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-}
-
-#jasonBioTitle {
-    color: #000000;
-    font-family: Poppins;
-    font-size: 108px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-}
-
-#jasonBio {
-    width: 624px;
-    height: 171px;
-    flex-shrink: 0;
-    color: #000000;
-    font-family: Poppins;
-    font-size: 31.593px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 90.997%; /* 28.749px */
-}
-
-#listenNowButton {
-    color: #000000;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 31.593px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 90.997%; /* 28.749px */
 }

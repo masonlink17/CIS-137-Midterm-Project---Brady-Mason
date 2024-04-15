@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/main4(merch).css">
+    <title>Merch</title>
+    <script type="text/javascript" src="..//javascript/navigationBar.js"></script>
 </head>
 <body>
-    
+    <div id="headerNavBar" onmouseout="startTimer('ABOUT')" onmouseover="stopTimer()">
+        <nav>
+            <ul id="headerNavList">
+                <li><a href="home.html" id="navHOME" onmouseover="moveSelector('HOME')">HOME</a></li>
+                <li><a href="about.html" id="navABOUT" onmouseover="moveSelector('ABOUT')">ABOUT</a></li>
+                <li><a href="music.html" id="navMUSIC" onmouseover="moveSelector('MUSIC')">MUSIC</a></li>
+                <li><a href="merch.html" id="navMERCH" onmouseover="moveSelector('MERCH')">MERCH</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="nullHeaderNavBar">
+        <nav>
+            <ul id="nullHeaderNavList">
+                <li><a>HOME</a></li>
+                <li><a>ABOUT</a></li>
+                <li><a>MUSIC</a></li>
+                <li><a>MERCH</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="navSelector" onmouseover="moveSelector()"></div>
+    <div id="wrap">
+        <div id="merchHeader">
+            <div id="merchTitle">
+                <h1>Merch</h1>
+            </div>
+        </div>
+        <div id="vinylsSale">
+            <div id="vinyl1">
+                <h3>Vinyl #1</h3>
+                <div id="vinyl1Bio">
+                    <h4>John McCheese</h4>
+                    <div id="vinyl1Price">
+                        <h3>$41.99</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="vinyl2">
+                <h3>Vinyl #2</h3>
+                <div id="vinyl2Bio">
+                    <h4>Herbert Tonius</h4>
+                    <div id="vinyl2Price">
+                        <h3>$49.99</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="shirtCassetteSale">
+            <div id="shirt">
+                <h3>T-Shirt</h3>
+                <div id="tshirtBio">
+                    <h4>Herbert Tonius</h4>
+                    <div id="tShirtPrice">
+                        <h3>$44.99</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="cassette">
+                <h3>Album Cassette</h3>
+                <div id="cassetteBio">
+                    <h4>Jason All-Dean</h4>
+                    <div id="cassettePrice">
+                        <h3>$14.99</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <nav id="footerNav">
+                <ul id="footerNavList">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="music.html">MUSIC</a></li>
+                    <li><a href="merch.html">MERCH</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </body>
 </html>

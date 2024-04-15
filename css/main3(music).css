@@ -1,0 +1,216 @@
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+#musicHeader {
+    background-image: url(..//images/musicBackHeader.jpeg);
+    width: 100%;
+    height: 576px;
+    grid-column: 1 / span 6;
+}
+
+#musicHeaderTitle {
+    padding: 0px;
+    margin-left: 0px;
+    grid-column: 1/4;
+    color: #000000;
+    font-family: futura; /* ? */
+    font-size: 150px;
+    line-height: 1em;
+    letter-spacing: -10px;
+    
+}
+
+/* ----------POPUP---------- */
+
+body {
+    font-family: futura, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(148, 91, 212, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    z-index: 1000;
+}
+.popup {
+    background-color: #8000FF;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    cursor: pointer;
+}
+#merchLinkPopup {
+    text-decoration: none;
+    color: #FFFFFF; /* Why no worko */
+}
+
+/* ----------NAVBAR---------- */
+
+#headerNavBar {
+    position:fixed;
+    bottom: 30px;
+    right: 28%;
+    padding: 2%;
+    width: 40%;
+    border-radius: 63px;
+    box-shadow: #8000FF 0px 0px 10px 3px;
+    text-align: center;
+    margin-right: auto;
+    z-index: 3;
+}
+
+#headerNavBar > nav > ul{
+    margin:0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+#headerNavBar > nav > ul> li> a{
+    font-family: Futura;
+    color: black;
+    text-decoration: none;
+    font-size: 15pt;
+    margin: auto;
+    transition-duration: 0.4s;
+}
+
+#headerNavBar > nav > ul> li> a:hover{
+    color: #FFFFFF;
+    transition-duration: 0.4s;
+}
+
+.selected {
+    background: #8000FF;
+    padding: 16%;
+    border-radius: 116px;
+    
+}
+
+#headerNavList{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ----------null NAV---------- */
+
+#nullHeaderNavBar {
+    position:fixed;
+    bottom: 30px;
+    left: 28%;
+    padding: 2%;
+    width: 40%;
+    background-color: #FFFFFF;
+    border-radius: 63px;
+    text-align: center;
+    margin-right: auto;
+    z-index: 1;
+}
+
+#nullHeaderNavBar > nav > ul{
+    margin:0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+#nullHeaderNavBar > nav > ul> li> a{
+    font-family: Futura;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15pt;
+    margin: auto;
+}
+
+/* ----------NAV SELECTOR---------- */
+#navSelector {
+    background-color: #8000FF;
+    padding: 2.25em;
+    border-radius: 116px;
+    position:fixed;
+    bottom: 35px;
+    width: 45px;
+    transition: left 0.3s ease;
+    z-index: 2;
+}
+
+/* ----------RELEASES---------- */
+
+#newReleasesTitle {
+    text-align: center;
+    margin-bottom: 50pt;
+}
+
+#releaseColumns {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.column h2 {
+    margin: 0;
+}
+
+.column p {
+    margin: 5px 0;
+}
+
+#spotlightTitle {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 108px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+#jasonBioTitle {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 108px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+#jasonBio {
+    width: 624px;
+    height: 171px;
+    flex-shrink: 0;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 31.593px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90.997%; /* 28.749px */
+}
+
+#listenNowButton {
+    color: #000000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 31.593px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90.997%; /* 28.749px */
+}

@@ -1,0 +1,289 @@
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+#wrap {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #000000;
+}
+
+/* ----------ABOUT HEADER---------- */
+
+#aboutHeader {
+    background-image: url(..//images/stage.jpg);
+    background-size: 120%;
+    grid-column: 1/7;
+    height: 100vh;
+}
+
+#aboutHeaderTitle {
+    padding: 0px;
+    margin-left: 50px;
+    grid-column: 1/4;
+    color: #FFFFFF;
+    font-family: futura;
+    font-size: 150px;
+    line-height: 1em;
+    letter-spacing: -10px;
+    
+}
+
+/* ----------HOME TOP HEADER---------- */
+
+#sporkRecordsTitle {
+    color: #FFFFFF;
+    font-family: futura;
+    font-size: 60pt;
+    letter-spacing: -15px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ----------HOME NAV HEADER---------- */
+
+#homeNav {
+    grid-column: 1/13;
+    background-image: url(..//images/Black\ White\ Music.jpg);
+    text-align: center;
+    padding: 15%;
+}
+
+#homeNavList > li > a {
+    font-family: futura;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 25pt;
+    transition-duration: 0.3s;
+}
+
+#homeNavList > li > a:hover {
+    color: #8000FF;
+    transition-duration: 0.3s;
+}
+
+#homeNavList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+
+/* ----------NAVBAR---------- */
+
+#headerNavBar {
+    position:fixed;
+    bottom: 30px;
+    right: 28%;
+    padding: 2%;
+    width: 40%;
+    border-radius: 63px;
+    box-shadow: #8000FF 0px 0px 10px 3px;
+    text-align: center;
+    margin-right: auto;
+    z-index: 3;
+}
+
+#headerNavBar > nav > ul{
+    margin:0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+#headerNavBar > nav > ul> li> a{
+    font-family: Futura;
+    color: black;
+    text-decoration: none;
+    font-size: 15pt;
+    margin: auto;
+    transition-duration: 0.4s;
+}
+
+#headerNavBar > nav > ul> li> a:hover{
+    color: #FFFFFF;
+    transition-duration: 0.4s;
+}
+
+.selected {
+    background: #8000FF;
+    padding: 16%;
+    border-radius: 116px;
+    
+}
+
+#headerNavList{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ----------null NAV---------- */
+
+#nullHeaderNavBar {
+    position:fixed;
+    bottom: 30px;
+    left: 28%;
+    padding: 2%;
+    width: 40%;
+    background-color: #FFFFFF;
+    border-radius: 63px;
+    text-align: center;
+    margin-right: auto;
+    z-index: 1;
+}
+
+#nullHeaderNavBar > nav > ul{
+    margin:0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+#nullHeaderNavBar > nav > ul> li> a{
+    font-family: Futura;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15pt;
+    margin: auto;
+}
+
+/* ----------NAV SELECTOR---------- */
+#navSelector {
+    background-color: #8000FF;
+    padding: 2.25em;
+    border-radius: 116px;
+    position:fixed;
+    bottom: 35px;
+    width: 45px;
+    transition: left 0.3s ease;
+    z-index: 2;
+}
+
+/* ----------MUSIC SCROLLER---------- */
+
+#musicScroller {
+    color: #FFFFFF;
+    font-family: futura;
+    font-size: 20pt;
+    grid-column: 1/13;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#midMusicScroller > p{
+    padding: 0px;
+    text-align: right;
+    animation: midMusicScroller linear;
+    animation-timeline: view();
+}
+
+@keyframes midMusicScroller {
+    from {transform: translateX(-100vw);}
+    to {transform: translateX(100vw);}
+}
+
+/* ----------HOME REVIEWS---------- */
+#homeReviews {
+    color: #FFFFFF;
+    font-family: futura;
+    grid-column: 1/13;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#reviewOne {
+    grid-column: 3/8;
+    text-align: right;
+}
+
+#reviewOneImage {
+    grid-column: 8/13;
+}
+
+#reviewOneImage > img{
+    height: 450px;
+    border-radius: 65px;
+}
+
+#reviewTwo {
+    grid-column: 6/11;
+    text-align: left;
+}
+
+#reviewTwoImage {
+    grid-column: 2/6;
+    justify-self: end;
+}
+
+#reviewTwoImage > img{
+    height: 450px;
+    width: 300px;
+    border-radius: 65px;
+}
+
+.getHeard {
+    border-radius: 65px;
+    padding: 20px;
+    width: 12em;
+    background-color: #8000FF;
+    color: #FFFFFF;
+    border: none;
+    font-family: futura;
+    font-size: 12pt;
+    transition-duration: 0.3s;
+}
+
+.getHeard:hover {
+    background-color: #FFFFFF;
+    color: #8000FF;
+    width: 15em;
+    transition-duration: 0.3s;
+    box-shadow: 5px 5px #8000FF;
+}
+
+/* ----------CLAUDE BIO---------- */
+
+#aboutContent {
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 50px;
+}
+
+#claudeBio {
+    grid-column: 7/10;
+    color: #FFFFFF;
+}
+
+#claudeImg {
+    grid-column: 4/7;
+    justify-self: end;
+}
+
+#claudeImg > img{
+    width: 80%;
+    border-radius: 224.5px 0px 224.5px 224.5px;
+}
+
+#sporkStatement {
+    margin-top: 50px;
+    color: #FFFFFF;
+    grid-column: 5/9;
+    font-size: 20pt;
+    text-align: center;
+}
+
+#sporkSigniture {
+    color: #8000FF;
+    font-size: 35pt;
+    margin: 30px 0px 180px 0px;
+    text-align: center;
+}
+
+/* ----------FOOTER---------- */
+/* #footer {
+    grid-column: 1/7;
+} */

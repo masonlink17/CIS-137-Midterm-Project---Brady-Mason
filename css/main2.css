@@ -47,6 +47,8 @@ body{
 #homeNav {
     grid-column: 1/13;
     background-image: url(..//images/Black\ White\ Music.jpg);
+    background-size: 120%;
+    background-position: center;
     text-align: center;
     padding: 15%;
 }
@@ -57,11 +59,16 @@ body{
     text-decoration: none;
     font-size: 25pt;
     transition-duration: 0.3s;
+    mix-blend-mode: difference;
+    
 }
 
 #homeNavList > li > a:hover {
     color: #8000FF;
     transition-duration: 0.3s;
+    mix-blend-mode: color-dodge;
+    border: #8000FF solid;
+    box-shadow: #000000 5px 5px 5px 5px;
 }
 
 #homeNavList {
@@ -178,9 +185,9 @@ body{
     animation: midMusicScroller 5s linear infinite;
 }
 
-@keyframes midMusicScroller {
-    from {transform: translateX(-100vw);}
-    to {transform: translateX(0vw);}
+@keyframes midMusicScroller{
+    from {transform: translateX(-100%);}
+    to {transform: translateX(-10%);}
 }
 
 /* ----------HOME REVIEWS---------- */

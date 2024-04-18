@@ -47,8 +47,9 @@ body{
 #homeNav {
     grid-column: 1/13;
     background-image: url(..//images/Black\ White\ Music.jpg);
-    background-size: 120%;
-    background-position: center;
+    background-size: 140%;
+    background-position-y: 80px;
+    background-attachment: fixed;
     text-align: center;
     padding: 15%;
 }

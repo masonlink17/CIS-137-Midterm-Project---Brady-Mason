@@ -175,13 +175,12 @@ body{
 #midMusicScroller > p{
     padding: 0px;
     text-align: right;
-    animation: midMusicScroller linear;
-    animation-timeline: view();
+    animation: midMusicScroller 5s linear infinite;
 }
 
 @keyframes midMusicScroller {
     from {transform: translateX(-100vw);}
-    to {transform: translateX(100vw);}
+    to {transform: translateX(0vw);}
 }
 
 /* ----------HOME REVIEWS---------- */

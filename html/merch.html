@@ -8,6 +8,7 @@
     <script type="text/javascript" src="..//javascript/navigationBar.js"></script>
 </head>
 <body>
+
     <div id="headerNavBar" onmouseout="startTimer('ABOUT')" onmouseover="stopTimer()">
         <nav>
             <ul id="headerNavList">
@@ -29,14 +30,20 @@
         </nav>
     </div>
     <div id="navSelector" onmouseover="moveSelector()"></div>
+    
+    //
     <div id="wrap">
         <div id="merchHeader">
             <div id="merchTitle">
                 <h1>Merch</h1>
             </div>
         </div>
-        <div id="vinylsSale">
-            <div id="vinyl1">
+        
+        <div id="vinylImage1">
+            <img src="/images/vinylSale.jpeg">
+        </div>
+
+        <div id="vinyl1">
                 <h3>Vinyl #1</h3>
                 <div id="vinyl1Bio">
                     <h4>John McCheese</h4>
@@ -44,8 +51,12 @@
                         <h3>$41.99</h3>
                     </div>
                 </div>
-            </div>
-            <div id="vinyl2">
+        </div>
+
+        <div id="vinylImage2">
+            <img src="/images/vinylSale.jpeg">
+        </div>
+        <div id="vinyl2"></div>
                 <h3>Vinyl #2</h3>
                 <div id="vinyl2Bio">
                     <h4>Herbert Tonius</h4>
@@ -53,38 +64,35 @@
                         <h3>$49.99</h3>
                     </div>
                 </div>
-            </div>
         </div>
+        
         <div id="shirtCassetteSale">
             <div id="shirt">
-                <h3>T-Shirt</h3>
-                <div id="tshirtBio">
-                    <h4>Herbert Tonius</h4>
-                    <div id="tShirtPrice">
-                        <h3>$44.99</h3>
-                    </div>
+                <div id="shirtImage1">
+                    <img src=" ">
                 </div>
+                    <h3>T-Shirt</h3>
+                    <div id="tshirtBio">
+                        <h4>Herbert Tonius</h4>
+                        <div id="tShirtPrice">
+                            <h3>$44.99</h3>
+                        </div>
+                    </div>
             </div>
             <div id="cassette">
-                <h3>Album Cassette</h3>
-                <div id="cassetteBio">
-                    <h4>Jason All-Dean</h4>
-                    <div id="cassettePrice">
-                        <h3>$14.99</h3>
-                    </div>
+                <div id="shirtImage2">
+                    <img src=" ">
                 </div>
+                    <h3>Album Cassette</h3>
+                    <div id="cassetteBio">
+                        <h4>Jason All-Dean</h4>
+                        <div id="cassettePrice">
+                            <h3>$14.99</h3>
+                        </div>
+                    </div>
             </div>
         </div>
-        <div id="footer">
-            <nav id="footerNav">
-                <ul id="footerNavList">
-                    <li><a href="home.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="music.html">MUSIC</a></li>
-                    <li><a href="merch.html">MERCH</a></li>
-                </ul>
-            </nav>
-        </div>
     </div>
+
 </body>
 </html>

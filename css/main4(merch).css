@@ -126,12 +126,25 @@ body {
 
 /* ----------VINYLS---------- */
 
-#vinylsSale {
-    grid-column: 1/6;
+#vinyl1 {
+    grid-column: 3/4;
     color: #ffffff;
-    text-align: left;
-    margin-left: 250px; /* Changed from 250pt to 250px */
-    margin-top: 30px; /* Changed from 30pt to 30px */
+    text-align: left;  
+}
+#vinylImage1 img {
+    width: 200pt;
+    height: auto;
+}
+#vinylImage1 {
+    grid-column: 2/3;
+}
+
+
+
+#vinylImage2 img {
+    grid-column: 1 / 6;
+    width: 0%;
+    height: auto;
 }
 
 #shirtCassetteSale {

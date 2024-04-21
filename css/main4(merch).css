@@ -214,5 +214,39 @@ body {
 #cassetteimage {
     grid-column: 5/6;
     grid-row: 5/7;
+}
+
+#cassette2{
+    grid-column: 3/4;
+    grid-row: 7/8;
+    color: #ffffff;
+    text-align: left;
+}
+#cassetteimage2 img {
+    width: 200pt;
+    height: auto;
+    border-radius: 10pt;
+    margin-left: 20pt;
+}
+#cassetteimage2 {
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+
+#cassette3{
+    grid-column: 4/5;
+    grid-row: 9/10;
+    color: #fff946;
+    text-align: right;
+}
+#cassetteimage3 img {
+    width: 200pt;
+    height: auto;
+    border-radius: 10pt;
+    margin-left: 20pt;
+}
+#cassetteimage3 {
+    grid-column: 5/6;
+    grid-row: 9/10;
     margin-bottom: 130pt;
 }

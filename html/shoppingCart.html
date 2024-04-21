@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +19,11 @@
             <input type="text" id="creditCard" name="creditCard" required>
             <button type="submit">Add Order</button>
         </form>
+        <button id="downloadOrders">Download Orders</button>
     </div>
     <script>
+        let orders = [];
+
         document.getElementById('orderForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const name = document.getElementById('name').value;
@@ -33,13 +36,22 @@
                 creditCard: creditCard
             };
 
-            let orders = JSON.parse(localStorage.getItem('orders')) || [];
             orders.push(order);
-
-            localStorage.setItem('orders', JSON.stringify(orders));
-
             alert('Order added successfully!');
             document.getElementById('orderForm').reset();
+        });
+
+        document.getElementById('downloadOrders').addEventListener('click', function() {
+            const data = JSON.stringify(orders, null, 2);
+            const blob = new Blob([data], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'orders.json';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
         });
     </script>
 </body>

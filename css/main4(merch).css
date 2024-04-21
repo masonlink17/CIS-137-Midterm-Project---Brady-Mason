@@ -10,6 +10,12 @@ body {
     background-color: #000000;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: white;
+    }
+  }
+
 /* ----------HEADER---------- */
 
 #merchHeader {

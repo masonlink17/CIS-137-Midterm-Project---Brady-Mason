@@ -1,0 +1,57 @@
+{ "products": [
+    {
+        "name": "Vinyl1",
+        "artist":"John McCheese",
+        "image": "vinylSale.jpeg",
+        "price": 41.99
+    },
+    {
+        "name": "Vinyl2",
+        "artist":"Herbert Tonius",
+        "image": "vinylSale.jpeg",
+        "price": 49.99
+    },
+    {
+        "name": "T-shirt",
+        "artist":"Herbert Tonius",
+        "image": "hoodie.jpg",
+        "price": 44.99
+    },
+    {
+        "name": "Cassette",
+        "artist":"Jason All-Dean",
+        "image": "cassette.jpg",
+        "price": 14.99
+    },
+    {
+        "name": "Cassette2",
+        "artist":"Herbert Tonius",
+        "image": "cassette.jpg",
+        "price": 14.99
+    },
+    {
+        "name": "Cassette3",
+        "artist":"Tim Munchkin",
+        "image": "cassette.jpg",
+        "price": 109.99
+    },
+    {
+        "name": "Cassette4",
+        "artist":"Jason All-Dean",
+        "image": "cassette.jpg",
+        "price": 14.99
+    },
+    {
+        "name": "Cassette5",
+        "artist":"Taylor Slow",
+        "image": "cassette.jpg",
+        "price": 1.99
+    },
+    {
+        "name": "Cassette6",
+        "artist":"Kids Pop",
+        "image": "cassette.jpg",
+        "price": 140000.99
+    }
+]
+}

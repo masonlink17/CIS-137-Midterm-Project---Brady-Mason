@@ -18,6 +18,7 @@ body {
     height: 513px;
     flex-shrink: 0;
     grid-column: 1 / span 6;
+    margin-bottom: 50pt;
 }
 
 #merchTitle {
@@ -124,7 +125,7 @@ body {
     background-color: #000000;
 }
 
-/* ----------VINYLS---------- */
+/* ----------MERCH ITEMS---------- */
 
 #vinyl1 {
     grid-column: 3/4;
@@ -134,22 +135,57 @@ body {
 #vinylImage1 img {
     width: 200pt;
     height: auto;
+    border-radius: 10pt
 }
 #vinylImage1 {
     grid-column: 2/3;
 }
 
-
-
-#vinylImage2 img {
-    grid-column: 1 / 6;
-    width: 0%;
-    height: auto;
-}
-
-#shirtCassetteSale {
-    grid-column: 1/6; /* Changed grid-column to span full width */
+#vinyl2 {
+    grid-column: 4/5;
+    grid-row: 3/4;
     color: #ffffff;
     text-align: right;
-    margin-right: 50pt;
+}
+#vinylImage2 img {
+    width: 200pt;
+    height: auto;
+    border-radius: 10pt
+}
+#vinylImage2 {
+    grid-column: 5/6;
+    grid-row: 3/4;
+}
+
+#shirt {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    color: #ffffff;
+    text-align: left;  
+}
+#shirtImage img {
+    width: 200pt;
+    height: auto;
+    border-radius: 10pt
+}
+#shirtImage {
+    grid-column: 2/3;
+    grid-row: 4/5
+}
+
+#cassette{
+    grid-column: 4/5;
+    grid-row: 5/6;
+    color: #ffffff;
+    text-align: right;
+}
+#cassetteimage img {
+    width: 200pt;
+    height: auto;
+    border-radius: 10pt
+}
+#cassetteimage {
+    grid-column: 5/6;
+    grid-row: 5/7;
+    margin-bottom: 130pt;
 }

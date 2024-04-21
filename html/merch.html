@@ -6,7 +6,22 @@
     <link rel="stylesheet" type="text/css" href="../css/main4(merch).css">
     <title>Merch</title>
     <script type="text/javascript" src="..//javascript/navigationBar.js"></script>
+    <script>
+        const productImages = document.querySelectorAll('.product-image');
+        productImages.forEach(image => {
+            image.addEventListener('mouseover', () => {
+                image.classList.add('hover'); 
+            });
+
+
+            image.addEventListener('mouseout', () => {
+                image.classList.remove('hover'); 
+            });
+        });
+    </script>
 </head>
+
+
 <body>
 
     <div id="headerNavBar" onmouseout="startTimer('ABOUT')" onmouseover="stopTimer()">
@@ -39,7 +54,7 @@
             </div>
         </div>
         
-        <div id="vinylImage1">
+        <div id="vinylImage1" class="product-image">
             <img src="/images/vinylSale.jpeg">
         </div>
 
@@ -53,7 +68,7 @@
                 </div>
         </div>
 
-        <div id="vinylImage2">
+        <div id="vinylImage2" class="product-image">
             <img src="/images/vinylSale.jpeg">
         </div>
 
@@ -67,7 +82,7 @@
             </div>
         </div>
 
-        <div id="shirtImage">
+        <div id="shirtImage" class="product-image">
             <img src="/images/hoodie.jpg">
         </div>
 
@@ -81,7 +96,7 @@
             </div>
         </div>
 
-        <div id="cassetteimage">
+        <div id="cassetteimage" class="product-image">
             <img src="/images/cassette.jpg">
         </div>
 

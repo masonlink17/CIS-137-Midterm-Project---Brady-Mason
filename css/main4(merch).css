@@ -127,6 +127,22 @@ body {
 
 /* ----------MERCH ITEMS---------- */
 
+.product-image:hover {
+    transform: scale(1.2);
+}
+
+.product-image {
+    transition: transform 0.3s;
+}
+
+.product-image img {
+    transition: transform 0.3s;
+}
+
+.product-image.hover img {
+    transform: scale(1.1);
+}
+
 #vinyl1 {
     grid-column: 3/4;
     color: #ffffff;
@@ -135,7 +151,9 @@ body {
 #vinylImage1 img {
     width: 200pt;
     height: auto;
-    border-radius: 10pt
+    border-radius: 10pt;
+    margin-right: 20pt;
+    
 }
 #vinylImage1 {
     grid-column: 2/3;
@@ -150,7 +168,8 @@ body {
 #vinylImage2 img {
     width: 200pt;
     height: auto;
-    border-radius: 10pt
+    border-radius: 10pt;
+    margin-left: 20pt;
 }
 #vinylImage2 {
     grid-column: 5/6;
@@ -166,7 +185,8 @@ body {
 #shirtImage img {
     width: 200pt;
     height: auto;
-    border-radius: 10pt
+    border-radius: 10pt;
+    margin-right: 20pt;
 }
 #shirtImage {
     grid-column: 2/3;
@@ -182,7 +202,8 @@ body {
 #cassetteimage img {
     width: 200pt;
     height: auto;
-    border-radius: 10pt
+    border-radius: 10pt;
+    margin-left: 20pt;
 }
 #cassetteimage {
     grid-column: 5/6;

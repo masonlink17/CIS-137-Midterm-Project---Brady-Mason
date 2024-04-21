@@ -6,19 +6,6 @@
     <link rel="stylesheet" type="text/css" href="../css/main4(merch).css">
     <title>Merch</title>
     <script type="text/javascript" src="..//javascript/navigationBar.js"></script>
-    <script>
-        const productImages = document.querySelectorAll('.product-image');
-        productImages.forEach(image => {
-            image.addEventListener('mouseover', () => {
-                image.classList.add('hover'); 
-            });
-
-
-            image.addEventListener('mouseout', () => {
-                image.classList.remove('hover'); 
-            });
-        });
-    </script>
 </head>
 
 
@@ -109,6 +96,28 @@
                     </div>
                 </div>
         </div>
+
+        <script>
+            const productImages = document.querySelectorAll('.product-image');
+            
+            productImages.forEach(image => {
+                image.addEventListener('mouseover', () => {
+                    image.classList.add('hover'); 
+                });
+    
+    
+                image.addEventListener('mouseout', () => {
+                    image.classList.remove('hover'); 
+                });
+            });
+    
+            productImages.forEach(image => {
+                image.addEventListener('click', () => {
+                    // Open a new tab with the shoppingCart.html file
+                    window.open('shoppingCart.html', '_blank');
+                });
+            });
+        </script>
 
 </body>
 </html>

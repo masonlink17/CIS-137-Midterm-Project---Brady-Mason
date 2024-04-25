@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    
     <div class="container">
         <h1>Shopping Cart</h1>
         <form id="orderForm">
@@ -17,42 +18,24 @@
             <input type="text" id="address" name="address" required>
             <label for="creditCard">Credit Card Number:</label>
             <input type="text" id="creditCard" name="creditCard" required>
-            <button type="submit">Add Order</button>
+            <button type="submit">Order Items</button>
         </form>
-        <button id="downloadOrders">Download Orders</button>
     </div>
     <script>
-        let orders = [];
-
-        document.getElementById('orderForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            const address = document.getElementById('address').value;
-            const creditCard = document.getElementById('creditCard').value;
-
-            const order = {
-                name: name,
-                address: address,
-                creditCard: creditCard
-            };
-
-            orders.push(order);
-            alert('Order added successfully!');
-            document.getElementById('orderForm').reset();
-        });
-
-        document.getElementById('downloadOrders').addEventListener('click', function() {
-            const data = JSON.stringify(orders, null, 2);
-            const blob = new Blob([data], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'orders.json';
-            document.body.appendChild(a);
-            a.click();
-            window.URL.revokeObjectURL(url);
-            document.body.removeChild(a);
-        });
     </script>
+
+    <div id="PurchaseMore">
+        <a href="merch.html">
+            <br>
+            <button id="PurchaseMore">Purchase More Items</button>
+        </a>
+    </div>
+
+
+    <div id="weather">
+        <footer>
+            <script src="../javascript/weatherBug.js"></script>
+        </footer>
+    </div>
 </body>
 </html>

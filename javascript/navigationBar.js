@@ -1,6 +1,6 @@
 function moveSelector (aLink) {
     let d = document.getElementById('navSelector');
-    d.style.position = "absolute";
+    d.style.position = "fixed";
 
     let x_pos = 0;
     let winWidth = window.innerWidth * 0.26;

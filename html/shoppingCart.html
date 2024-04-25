@@ -20,7 +20,10 @@
             <input type="text" id="creditCard" name="creditCard" required>
             <button type="submit">Add Order</button>
         </form>
-        <button id="downloadOrders">Download Orders</button>
+        <div>
+            <br>
+            <button id="downloadOrders">Download Orders</button>
+        </div>
     </div>
     <script>
         let orders = [];
@@ -55,6 +58,13 @@
             document.body.removeChild(a);
         });
     </script>
+
+    <div id="PurchaseMore">
+        <br>
+        <button id="PurchaseMore">Purchase More</button>
+        
+    </div>
+
     <div id="weather"></div>
     <script src="../javascript/weatherBug.js"></script>
 </body>

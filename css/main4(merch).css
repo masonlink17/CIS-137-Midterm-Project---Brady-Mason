@@ -6,15 +6,24 @@ body {
 #wrap {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr) min-content; /* Add min-content for the shopping cart */
     background-color: #000000;
 }
 
+
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: white;
+    #wrap {
+        grid-template-columns: repeat(1, 1fr);
     }
-  }
+    #vinyl1, #vinyl2, #shirt, #cassette, #cassette2, #cassette3 {
+        grid-column: auto;
+        grid-row: auto;
+        text-align: center;
+    }
+    .product-image img {
+        display: none;
+    }
+}
 
 /* ----------HEADER---------- */
 
@@ -252,6 +261,21 @@ body {
 }
 
 /* -----------SHOPPING CART------------- */
+
+#cartAside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10pt;
+    padding: 20pt;
+    margin-top: 20pt;
+    margin-right: 20pt;
+    margin-left: 20pt;
+    margin-bottom: 80pt;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 #AddToCartButton{
     background-color: #8000FF;

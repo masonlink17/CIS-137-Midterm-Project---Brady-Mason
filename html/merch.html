@@ -7,33 +7,8 @@
     <title>Merch</title>
     <script type="text/javascript" src="..//javascript/navigationBar.js"></script>
 </head>
-
-
 <body>
 
-    <div id="headerNavBar" onmouseout="startTimer('ABOUT')" onmouseover="stopTimer()">
-        <nav>
-            <ul id="headerNavList">
-                <li><a href="home.html" id="navHOME" onmouseover="moveSelector('HOME')">HOME</a></li>
-                <li><a href="about.html" id="navABOUT" onmouseover="moveSelector('ABOUT')">ABOUT</a></li>
-                <li><a href="music.html" id="navMUSIC" onmouseover="moveSelector('MUSIC')">MUSIC</a></li>
-                <li><a href="merch.html" id="navMERCH" onmouseover="moveSelector('MERCH')">MERCH</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div id="nullHeaderNavBar">
-        <nav>
-            <ul id="nullHeaderNavList">
-                <li><a>HOME</a></li>
-                <li><a>ABOUT</a></li>
-                <li><a>MUSIC</a></li>
-                <li><a>MERCH</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div id="navSelector" onmouseover="moveSelector()"></div>
-    
-    //
     <div id="wrap">
         <div id="merchHeader">
             <div id="merchTitle">
@@ -46,14 +21,14 @@
         </div>
 
         <div id="vinyl1">
-                <h3>Vinyl #1</h3>
-                <div id="vinyl1Bio">
-                    <h4>John McCheese</h4>
-                    <div id="vinyl1Price">
-                        <h3>$41.99</h3>
-                    </div>
-                    <button onclick="onClickAddToCart()">Add to Cart</button>
+            <h3>Vinyl #1</h3>
+            <div id="vinyl1Bio">
+                <h4>John McCheese</h4>
+                <div id="vinyl1Price">
+                    <h3>$41.99</h3>
                 </div>
+                <button id = "AddToCartButton" onclick="addToCart('Vinyl', 'John McCheese', 'vinylSale.jpeg', 41.99)">Add to Cart</button>
+            </div>
         </div>
 
         <div id="vinylImage2" class="product-image">
@@ -67,6 +42,7 @@
                 <div id="vinyl2Price">
                     <h3>$49.99</h3>
                 </div>
+                <button id = "AddToCartButton" onclick="addToCart('Vinyl', 'Herbert Tonius', 'vinylSale.jpeg', 49.99)">Add to Cart</button>
             </div>
         </div>
 
@@ -81,6 +57,7 @@
                 <div id="tShirtPrice">
                     <h3>$44.99</h3>
                 </div>
+                <button id = "AddToCartButton" onclick="addToCart('T-shirt', 'Herbert Tonius','hoodie.jpg', 44.99)">Add to Cart</button>
             </div>
         </div>
 
@@ -95,6 +72,7 @@
                     <div id="cassettePrice">
                         <h3>$14.99</h3>
                     </div>
+                    <button id = "AddToCartButton" onclick="addToCart('Cassette','Jason All-Dean','cassette.jpg', 14.99)">Add to Cart</button>
                 </div>
         </div>
 
@@ -109,6 +87,7 @@
                     <div id="cassettePrice">
                         <h3>$14.99</h3>
                     </div>
+                    <button id = "AddToCartButton" onclick="addToCart('Cassette', 'Herbert Tonius','cassette.jpg', 14.99)">Add to Cart</button>
                 </div>
         </div>
 
@@ -123,30 +102,17 @@
                     <div id="cassettePrice">
                         <h3>$109.99</h3>
                     </div>
+                    <button id = "AddToCartButton" onclick="addToCart('Cassette','Tim Munchkin','cassette.jpg', 14.99)">Add to Cart</button>
                 </div>
         </div>
+    </div>
 
-        <script>
-            const productImages = document.querySelectorAll('.product-image');
-            
-            productImages.forEach(image => {
-                image.addEventListener('mouseover', () => {
-                    image.classList.add('hover'); 
-                });
-    
-    
-                image.addEventListener('mouseout', () => {
-                    image.classList.remove('hover'); 
-                });
-            });
-    
-            productImages.forEach(image => {
-                image.addEventListener('click', () => {
-                    // Open a new tab with the shoppingCart.html file
-                    window.open('shoppingCart.html', '_blank');
-                });
-            });
-        </script>
+    <div id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cartItems"></ul>
+        <h3 id="cartTotal">Total: $0.00</h3>
+    </div>
 
-</body>
+    <script type="text/javascript" src="../javascript/shoppingCart.js"></script>
+
 </html>

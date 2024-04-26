@@ -1,12 +1,12 @@
 { "products": [
     {
-        "name": "Vinyl1",
+        "name": "Vinyl",
         "artist":"John McCheese",
         "image": "vinylSale.jpeg",
         "price": 41.99
     },
     {
-        "name": "Vinyl2",
+        "name": "Vinyl",
         "artist":"Herbert Tonius",
         "image": "vinylSale.jpeg",
         "price": 49.99
@@ -24,13 +24,13 @@
         "price": 14.99
     },
     {
-        "name": "Cassette2",
+        "name": "Cassette",
         "artist":"Herbert Tonius",
         "image": "cassette.jpg",
         "price": 14.99
     },
     {
-        "name": "Cassette3",
+        "name": "Rare Cassette",
         "artist":"Tim Munchkin",
         "image": "cassette.jpg",
         "price": 109.99

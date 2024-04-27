@@ -1,0 +1,102 @@
+:root {
+    --move-up: 250;
+    --move-down: -250;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#musicHeader {
+    background-image: url(..//images/Andrew\ Heald\ Unsplash.jpg);
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#musicHeader > h1 {
+    font-size: 100pt;
+    color: #FFFFFF;
+    padding: 80px 20px 80px 20px;
+    margin: 0px;
+    font-family: futura;
+    line-height: 90pt;
+}
+
+#newReleasesTitle {
+    font-family: futura;
+    font-size: 50pt;
+    padding: 20px;
+    text-align: center;
+    grid-column: 1/4;
+}
+
+#recordShop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px;
+    background: linear-gradient(to bottom, #8000FF, #000000);
+}
+
+.recordShopImage {
+    height: 250px;
+    align-self: center;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.recordSpinner {
+    height: 250px;
+    transform: translateY(-250px);
+    transition-duration: 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.recordShopTitle {
+    margin-top: -200px;
+}
+
+.recordHolder {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: futura;
+    margin: 50px;
+    background-color: #FFFFFF70;
+    border: solid #FFFFFF80;
+    padding: 20px;
+    border-radius: 25px;
+    transition-duration: 0.3s;
+}
+
+.recordHolder:hover {
+    background-color: #FFFFFF80;
+    transition-duration: 0.3s;
+    transform: translateY(5px);
+}
+
+
+.listenNow {
+    border-radius: 65px;
+    padding: 20px;
+    width: 12em;
+    background-color: #8000FF;
+    color: #FFFFFF;
+    border: none;
+    font-family: futura;
+    font-size: 12pt;
+    transition-duration: 0.3s;
+}
+
+.listenNow:hover {
+    background-color: #FFFFFF;
+    color: #8000FF;
+    width: 15em;
+    transition-duration: 0.3s;
+    box-shadow: 5px 5px #8000FF;
+}

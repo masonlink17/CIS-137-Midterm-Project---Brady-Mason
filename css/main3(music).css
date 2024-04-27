@@ -324,3 +324,10 @@ body {
 #cartTotal {
     grid-column: 1/5;
 }
+#checkoutButton {
+    background-color: #FFFFFF;
+    color: #8000FF;
+    transition-duration: 0.3s;
+    padding: 10px 25px;
+    box-shadow: 5px 5px #8000FF;
+}

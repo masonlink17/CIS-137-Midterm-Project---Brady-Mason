@@ -303,7 +303,23 @@ body{
     position: fixed;
     top: 0;
     right: 0;
-    width: 300px;
+    width: 150px;
+    background-color: #ffffff51;
+    border-radius: 10pt;
+    padding: 20pt;
+    margin-top: 20pt;
+    margin-right: 20pt;
+    margin-left: 20pt;
+    margin-bottom: 80pt;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+}
+
+#cartAside:hover {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
     background-color: #ffffff;
     border-radius: 10pt;
     padding: 20pt;
@@ -312,19 +328,29 @@ body{
     margin-left: 20pt;
     margin-bottom: 80pt;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
 }
 
 #AddToCartButton{
     background-color: #8000FF;
     color: rgb(255, 255, 255);
     border: none;
-    border-radius: 15px;
+    border-radius: 150px;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+#AddToCartButton:hover{
+    background-color: #FFFFFF;
+    color: #8000FF;
+    transition-duration: 0.3s;
+    padding: 10px 25px;
+    box-shadow: 5px 5px #8000FF;
 }
 
 button[id^="removeButton"] {
@@ -340,4 +366,38 @@ button[id^="removeButton"] {
     margin: 4px 2px;
     margin-left: 8pt;
     cursor: pointer;
+}
+
+#numberCartItems {
+    background-color: #8000FF;
+    background-size: 10px;
+    padding: 10px;
+    color: #FFFFFF;
+    display: inline;
+    border-radius: 100px;
+}
+
+#cartItems {
+    display: none;
+}
+
+#cart {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 40px;
+}
+
+#cartTitle {
+    grid-column: 1/4;
+    white-space: nowrap;
+}
+#numberCartItems {
+    grid-column: 4/5;
+    align-self: baseline;
+    text-align: center;
+}
+#cartItems {
+    grid-column: 1/2;
+}
+#cartTotal {
+    grid-column: 1/5;
 }

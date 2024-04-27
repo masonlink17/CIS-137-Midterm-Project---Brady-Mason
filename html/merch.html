@@ -5,9 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/main4(merch).css">
     <title>Merch</title>
-    <script type="text/javascript" src="..//javascript/navigationBar.js"></script></head>
+    <script type="text/javascript" src="..//javascript/navigationBar.js"></script>
+</head>
 <body>
-
+    <div id="headerNavBar" onmouseout="startTimer('MERCH')" onmouseover="stopTimer()">
+        <nav>
+            <ul id="headerNavList">
+                <li><a href="home.html" id="navHOME" onmouseover="moveSelector('HOME')">HOME</a></li>
+                <li><a href="about.html" id="navABOUT" onmouseover="moveSelector('ABOUT')">ABOUT</a></li>
+                <li><a href="music.html" id="navMUSIC" onmouseover="moveSelector('MUSIC')">MUSIC</a></li>
+                <li><a href="merch.html" id="navMERCH" onmouseover="moveSelector('MERCH')">MERCH</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="nullHeaderNavBar">
+        <nav>
+            <ul id="nullHeaderNavList">
+                <li><a>HOME</a></li>
+                <li><a>ABOUT</a></li>
+                <li><a>MUSIC</a></li>
+                <li><a>MERCH</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="navSelector" onmouseover="moveSelector()" ></div>
     <div id="wrap">
         <div id="merchHeader">
             <div id="merchTitle">
@@ -104,16 +125,18 @@
                     <button id = "AddToCartButton" onclick="addToCart('Cassette','Tim Munchkin','cassette.jpg', 14.99)">Add to Cart</button>
                 </div>
         </div>
-
-        <aside id="cartAside">
+        
+        <script type="text/javascript" src="../javascript/shoppingCart.js"></script>
+        <aside id="cartAside" onmouseover="showCartItems()" onmouseleave="hideCartItems()">
             <div id="fullCartSegment">
                 <div id="cart">
-                    <h2>Your Cart</h2>
+                    <h2 id="cartTitle">Your Cart</h2> 
+                    <p id="numberCartItems">0</p>
                     <ul id="cartItems"></ul>
                     <h3 id="cartTotal">Total: $0.00</h3>
                 </div>
 
-                <script type="text/javascript" src="../javascript/shoppingCart.js"></script>
+                
             </div>
         </aside>
 

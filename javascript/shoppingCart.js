@@ -1,5 +1,6 @@
 let cart = [];
 let total = 0;
+let items = 0;
     
 function addToCart(name, artist, image, price) {
     let product = {
@@ -10,12 +11,14 @@ function addToCart(name, artist, image, price) {
     };
     cart.push(product);
     total += price;
+    items += 1;
     updateCart();
 }
 
 function removeFromCart(index) {
     total -= cart[index].price;
     cart.splice(index, 1);
+    items -= 1;
     updateCart();
 }
 
@@ -34,6 +37,8 @@ function updateCart() {
         cartItemsElement.appendChild(li);
     });
     cartTotalElement.textContent = `Total: $${total.toFixed(2)}`;
+
+    document.getElementById('numberCartItems').innerHTML = items;
 }
 
 function loadProducts() {
@@ -43,4 +48,12 @@ function loadProducts() {
             data.products.forEach(product => addToCart(product.name, product.artist, product.image, product.price));
         })
         .catch(error => console.error('Error loading products:', error)); //exception handling go brrrrrrrrrrrr
+}
+
+function showCartItems() {
+    document.getElementById('cartItems').style.display = 'block';
+}
+
+function hideCartItems() {
+    document.getElementById('cartItems').style.display = 'none'
 }

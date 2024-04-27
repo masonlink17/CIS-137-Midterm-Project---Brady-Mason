@@ -57,14 +57,15 @@
             
         </div>
 
-        <aside id="cartAside">
+        <script type="text/javascript" src="../javascript/shoppingCart.js"></script>
+        <aside id="cartAside" onmouseover="showCartItems()" onmouseleave="hideCartItems()">
             <div id="fullCartSegment">
                 <div id="cart">
-                    <h2>Your Cart</h2>
+                    <h2 id="cartTitle">Your Cart</h2> 
+                    <p id="numberCartItems">0</p>
                     <ul id="cartItems"></ul>
                     <h3 id="cartTotal">Total: $0.00</h3>
                 </div>
-                <script type="text/javascript" src="../javascript/shoppingCart.js"></script>
             </div>
         </aside>
     </div>

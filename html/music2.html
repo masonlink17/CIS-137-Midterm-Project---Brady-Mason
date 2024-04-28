@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/main5(music2).css">
     <script type = "text/javascript" src="..//javascript/recordSpinner.js"></script>
+    <script type = "text/javascript" src="..//javascript/navigationBar.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <div id="headerNavBar" onmouseout="startTimer('MUSIC')" onmouseover="stopTimer()">
+        <nav>
+            <ul id="headerNavList">
+                <li><a href="home.html" id="navHOME" onmouseover="moveSelector('HOME')">HOME</a></li>
+                <li><a href="about.html" id="navABOUT" onmouseover="moveSelector('ABOUT')">ABOUT</a></li>
+                <li><a href="music2.html" id="navMUSIC" onmouseover="moveSelector('MUSIC')">MUSIC</a></li>
+                <li><a href="merch.html" id="navMERCH" onmouseover="moveSelector('MERCH')">MERCH</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="nullHeaderNavBar">
+        <nav>
+            <ul id="nullHeaderNavList">
+                <li><a>HOME</a></li>
+                <li><a>ABOUT</a></li>
+                <li><a>MUSIC</a></li>
+                <li><a>MERCH</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="navSelector" onmouseover="moveSelector()" ></div>
     <div id="wrap">
         <div id="musicHeader">
             <h1>TALENT <br> AND <br> MASS <br> APPEAL</h1>
@@ -39,8 +61,10 @@
         </div>
         <div id="spotlight">
             <div id="spotlightTitle"> Spotlight </div>
-            <img src="" alt="">
-            <h1> Jason All-Dean </h1>
+            <h1 id="jasonTitle"> Jason All-Dean </h1>
+            <p id="jasonDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+               incididunt ut labore et dolore magna aliqua.</p>
+            <button id="listenJasonBtn" class="listenNow">Listen Now</button>
         </div>
     </div>
 </body>

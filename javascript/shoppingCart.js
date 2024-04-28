@@ -57,3 +57,10 @@ function showCartItems() {
 function hideCartItems() {
     document.getElementById('cartItems').style.display = 'none'
 }
+function goToShoppingCart() {
+    if (items === 0) {
+        alert("There are no items in your cart.");
+    } else {
+        window.open("shoppingCart.html", "_blank");
+    }
+}

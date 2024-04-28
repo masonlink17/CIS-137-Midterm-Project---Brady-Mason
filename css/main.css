@@ -91,4 +91,10 @@ button[id^="removeButton"] {
     margin-left: 8pt;
     cursor: pointer;
 }
-/* --- Cant get this to work, evenb when i added a css wrap --- */
+#checkoutButton {
+    background-color: #FFFFFF;
+    color: #8000FF;
+    transition-duration: 0.3s;
+    padding: 10px 25px;
+    box-shadow: 5px 5px #8000FF;
+}

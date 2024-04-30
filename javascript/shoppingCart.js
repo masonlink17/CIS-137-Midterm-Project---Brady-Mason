@@ -52,7 +52,6 @@ function updateCart() {
 
     document.getElementById('numberCartItems').innerHTML = items;
 
-    // Save cart to local storage after updating
     saveCart();
 }
 

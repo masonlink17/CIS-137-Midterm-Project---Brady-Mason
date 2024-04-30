@@ -201,6 +201,7 @@ body{
     display: grid;
     gap: 40px;
     grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 100px;
 }
 
 #reviewOne {

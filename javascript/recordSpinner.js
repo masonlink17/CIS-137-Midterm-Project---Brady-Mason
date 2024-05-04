@@ -5,6 +5,7 @@
         }
     }
 
+
     function spinRecordDown(recordId) {
         var recordSpin = document.getElementById(recordId);
         if (recordSpin) {

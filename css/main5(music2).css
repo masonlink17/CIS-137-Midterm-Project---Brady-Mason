@@ -8,8 +8,29 @@ body {
     padding: 0px;
 }
 
+.triangle {
+    position: relative;
+    background: #2c3e5000;
+    height: 10vh;
+    margin-top: -100px;
+  }
+  
+  .triangle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 100px 100px;
+    border-color: transparent transparent #8000FF transparent;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 #musicHeader {
-    background-image: url(..//images/Andrew\ Heald\ Unsplash.jpg);
+    background-image: url(..//images/Music\ Black\ White.jpg);
+    background-attachment: fixed;
     background-size: cover;
     height: auto;
     background-position: center;
@@ -22,12 +43,16 @@ body {
     color: #FFFFFF;
     padding: 80px 20px 80px 20px;
     margin: 0px;
-    font-family: futura;
+    font-family: futura, sans-serif;
     line-height: 90pt;
+    mix-blend-mode: difference;
 }
 
 #newReleasesTitle {
-    font-family: futura;
+    font-family: "bdr-mono", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #FFFFFF;
     font-size: 50pt;
     padding: 20px;
     text-align: center;
@@ -65,7 +90,9 @@ body {
 .recordHolder {
     text-align: center;
     color: #FFFFFF;
-    font-family: futura;
+    font-family: futura, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     margin: 50px;
     background-color: #FFFFFF70;
     border: solid #FFFFFF80;

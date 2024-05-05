@@ -36,19 +36,19 @@
         "price": 109.99
     },
     {
-        "name": "Download1",
+        "name": "Digital Download",
         "artist":"Tim Munchkin",
         "image": "munchkiincover.jpg",
         "price": 5.99
     },
     {
-        "name": "Download2",
+        "name": "Digital Download",
         "artist":"Json All-Dean",
         "image": "alldeancover.jpg",
         "price": 5.99
     },
     {
-        "name": "Download3",
+        "name": "Digital Download",
         "artist":"Herbert Tonius",
         "image": "herbertciver.jpg",
         "price": 140000.99

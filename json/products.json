@@ -36,21 +36,21 @@
         "price": 109.99
     },
     {
-        "name": "Cassette4",
-        "artist":"Jason All-Dean",
-        "image": "cassette.jpg",
-        "price": 14.99
+        "name": "Download1",
+        "artist":"Tim Munchkin",
+        "image": "munchkiincover.jpg",
+        "price": 5.99
     },
     {
-        "name": "Cassette5",
-        "artist":"Taylor Slow",
-        "image": "cassette.jpg",
-        "price": 1.99
+        "name": "Download2",
+        "artist":"Json All-Dean",
+        "image": "alldeancover.jpg",
+        "price": 5.99
     },
     {
-        "name": "Cassette6",
-        "artist":"Kids Pop",
-        "image": "cassette.jpg",
+        "name": "Download3",
+        "artist":"Herbert Tonius",
+        "image": "herbertciver.jpg",
         "price": 140000.99
     }
 ]

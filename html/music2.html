@@ -45,6 +45,7 @@
                 <h2 class="recordShopTitle">Tim Munchkin</h2>
                 <p>Hear the sound of Tim Munckin</p>
                 <button class="listenNow">Listen Now</button>
+                <button id="AddToCartButton" onclick="addToCart('Digital Download', 'Tim Munchkin', 'munchkiincover.jpg', 5.99)">Add to Cart</button>
             </div>
             <div id='record2' class="recordHolder" onmouseover="spinRecord('recordSpin2')" onmouseleave="spinRecordDown('recordSpin2')">
                 <img class="recordShopImage" src="..//images/alldeancover.jpg" alt="Jason All-Dean">
@@ -52,6 +53,7 @@
                 <h2 class="recordShopTitle">Jason All-Dean</h2>
                 <p>Hear the sound of Jason All-Dean</p>
                 <button class="listenNow">Listen Now</button>
+                <button id="AddToCartButton" onclick="addToCart('Digital Download', 'Json All-Dean', 'alldeancover.jpg', 5.99)">Add to Cart</button>
             </div>
             <div id='record3' class="recordHolder" onmouseover="spinRecord('recordSpin3')" onmouseleave="spinRecordDown('recordSpin3')">
                 <img class="recordShopImage" src="..//images/herbertciver.jpg" alt="Herbert Tonius">
@@ -59,6 +61,7 @@
                 <h2 class="recordShopTitle">Herbert Tonius</h2>
                 <p>Hear the sound of Herbert Tonius</p>
                 <button class="listenNow">Listen Now</button>
+                <button id="AddToCartButton" onclick="addToCart('Digital Download', 'Herbert Tonius', 'herbertciver.jpg', 140000.99)">Add to Cart</button>
             </div>
         </div>
         <div id="spotlight">
@@ -76,6 +79,7 @@
                     <p id="numberCartItems">0</p>
                     <ul id="cartItems"></ul>
                     <h3 id="cartTotal">Total: $0.00</h3>
+                    <button id="checkoutButton" onclick="goToShoppingCart()">Checkout</button>
                 </div>
             </div>
         </aside>

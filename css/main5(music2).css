@@ -345,6 +345,7 @@ button[id^="removeButton"] {
 #cart {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 40px;
+    z-index: 5;
 }
 
 #cartTitle {

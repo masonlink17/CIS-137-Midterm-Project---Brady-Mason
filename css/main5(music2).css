@@ -293,11 +293,12 @@ body {
 }
 
 #AddToCartButton{
-    background-color: #8000FF;
+    background-color: #59c875;
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 150px;
     padding: 10px 20px;
+    margin: 10pt;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -308,10 +309,10 @@ body {
 
 #AddToCartButton:hover{
     background-color: #FFFFFF;
-    color: #8000FF;
+    color: #59c875;
     transition-duration: 0.3s;
     padding: 10px 25px;
-    box-shadow: 5px 5px #8000FF;
+    box-shadow: 5px 5px #59c875;
 }
 
 button[id^="removeButton"] {
